@@ -71,9 +71,11 @@
   {% else %}
     <span class="btn btn-outline-primary">Older</span>
   {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
+  {% if paginator.total_pages > 1 %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+  {% endif %}
   {% if paginator.next_page %}
     <a class="btn btn-outline-secondary" href="{{ paginator.next_page_path }}">Newer</a>
   {% else %}
