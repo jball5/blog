@@ -16,8 +16,9 @@
 title: Legacy Traders Blog
 email: suzytradealerts@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog from two traders at Option Legacy. Mindset, trader psychology,
-  risk, and option trading strategies are discovered here.
+  A blog from two traders at Option Legacy. Follow along with us as we cover
+  mindset, trader psychology, risk, and option trading strategies are
+  discovered here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -28,11 +29,12 @@ markdown: kramdown
 #theme: minima
 excerpt_separator: <!--more-->
 paginate: 4
-paginate_path: "/blog/page:num/"
+# paginate_path: "/blog/page:num/"
 sass:
   style: compact
 plugins:
   - jekyll-feed
+  - jekyll-menus
   - jekyll-paginate
 
 # Exclude from processing.
