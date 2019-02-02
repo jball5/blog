@@ -33,9 +33,13 @@ fields:
     date_format: YYYY-MM-DD
     display_utc: true
 - type: tag_list
+  name: categories
+  label: Categories
+  description: ex. rationale, option strategy
+- type: tag_list
   label: Tags
   name: tags
-  description: main-featured, left-featured, right-featured
+  description: ex. main-featured, left-featured, right-featured
 - type: file
   label: image
   name: image
