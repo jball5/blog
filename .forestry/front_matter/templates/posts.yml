@@ -47,3 +47,5 @@ fields:
   label: Tags
   name: tags
   description: ex. main-featured, left-featured, right-featured
+pages:
+- _posts/suzy-trade-alerts-aapl-rational.md
