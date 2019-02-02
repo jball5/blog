@@ -1,8 +1,11 @@
 ---
 navigation:
 - title: Home
+  url: /index
   weight: 1
 - title: About
+  url: /about
   weight: 2
 - title: Blog
+  blog: /blog
   weight: 3
