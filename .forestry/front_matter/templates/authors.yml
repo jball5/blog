@@ -15,3 +15,4 @@ fields:
     - Jesse Ball
   label: Author
   description: select the author of the post
+  default: Tim Key
