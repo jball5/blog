@@ -44,11 +44,3 @@ fields:
   label: Tags
   name: tags
   description: ex. main-featured, left-featured, right-featured
-- type: textarea
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: body
-  name: body
-  description: post body goes here
