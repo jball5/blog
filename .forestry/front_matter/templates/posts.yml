@@ -23,6 +23,7 @@ fields:
     options:
     - Tim Key
     - Jesse Ball
+    required: true
   name: author
   label: Author
   description: select the author
@@ -32,6 +33,8 @@ fields:
   config:
     date_format: YYYY-MM-DD
     display_utc: true
+    required: true
+  hidden: false
 - type: file
   label: image
   name: image
