@@ -7,7 +7,7 @@ categories: [rationale, option strategy]
 tags: [main-featured]
 ---
 
-Let's go look inside the chart and break down the rationale. So since the end of October, we've been in a downward trend in apple and then back on January 18th, you can see this blue line on the chart is a 10 day simple moving average and it crossed above the Green Line, which is the 20 days simple moving average showing that there's movement or momentum to the upside. This shows a possible trend reversal.
+Let's go look inside the chart and break down the rationale. So since the end of October, we've been in a downward trend in apple and then back on January 18th, you can see this blue line on the chart is a 10 day simple moving average and it crossed above the Green Line, which is the 20 days simple moving average showing that there's movement or momentum to the upside. This shows a possible trend reversal.<!--more-->
 
 Since, on January 18th, the 10 SMA crossed above the 20 SMA we would need the next following day to move up for us to signal entry into a bullish trade. But what happened? It didn't move up, it moved down, and then it continued to move sideways. Then we had some positive price movement to the upside on January 25th, but it didn't close above the high of January 18th to signal entry.
 
