@@ -19,3 +19,9 @@ fields:
   name: author
   label: Author
   description: select the author
+- type: datetime
+  name: date
+  label: Date
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: true
