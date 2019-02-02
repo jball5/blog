@@ -1,11 +1,16 @@
 ---
 layout: default
-title:  Suzy Trade Alert AAPL Rationale
+title: Suzy Trade Alert AAPL Rationale
 author: Tim Key
-date:   2019-02-02 11:36:26 -0800
-categories: [rationale, option strategy]
-tags: [main-featured]
+date: 2019-02-02 19:36:26 +0000
+categories:
+- rationale
+- option strategy
+tags:
+- main-featured
+
 ---
+![](https://res.cloudinary.com/dznhn4oax/image/upload/v1548981987/Suzy_Trade_Alert_AAPL_Rationale.png)
 
 Let's go look inside the chart and break down the rationale. So since the end of October, we've been in a downward trend in apple and then back on January 18th, you can see this blue line on the chart is a 10 day simple moving average and it crossed above the Green Line, which is the 20 days simple moving average showing that there's movement or momentum to the upside. This shows a possible trend reversal.<!--more-->
 
