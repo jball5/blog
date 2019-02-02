@@ -4,6 +4,13 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
+  name: layout
+  label: Layout
+  hidden: true
+  config:
+    required: true
+  default: default
+- type: text
   name: title
   label: Title
   config:
@@ -25,10 +32,11 @@ fields:
   config:
     date_format: YYYY-MM-DD
     display_utc: true
-- type: text
-  name: layout
-  label: Layout
-  hidden: true
-  config:
-    required: true
-  default: default
+- type: tag_list
+  label: Tags
+  name: tags
+  description: main-featured, left-featured, right-featured
+- type: file
+  label: image
+  name: image
+  description: post image goes here
