@@ -32,6 +32,10 @@ fields:
   config:
     date_format: YYYY-MM-DD
     display_utc: true
+- type: file
+  label: image
+  name: image
+  description: post image goes here
 - type: tag_list
   name: categories
   label: Categories
@@ -40,7 +44,11 @@ fields:
   label: Tags
   name: tags
   description: ex. main-featured, left-featured, right-featured
-- type: file
-  label: image
-  name: image
-  description: post image goes here
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: body
+  name: body
+  description: post body goes here
