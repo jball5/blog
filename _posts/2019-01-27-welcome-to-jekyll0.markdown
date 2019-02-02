@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Suzy Trade Alert AAPL Rationale
-author: Tim Key
+author:
+- Tim Key
 date: 2019-02-02 19:36:26 +0000
 categories:
 - rationale
