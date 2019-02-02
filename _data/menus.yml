@@ -7,5 +7,5 @@ navigation:
   url: /about
   weight: 2
 - title: Blog
-  blog: /blog
+  url: /blog
   weight: 3
