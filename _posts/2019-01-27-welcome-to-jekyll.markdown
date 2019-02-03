@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Welcome to Jekyll!"
+author: "Jesse Ball"
 date:   2019-01-27 10:10:26 -0800
 categories: jekyll update
 ---

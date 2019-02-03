@@ -10,8 +10,11 @@
   </div>
   <div class="col-9">
     <h4 class"text-dark">{{ author.name }}</h4>
-    {{ author.title }}<br/>
-    {{ author.company }}<br/>
-    <span class="text-black-50 font-weight-lighter font-italic">{{ author.content }}</span>
+    {{ author.title }}<br />
+    {{ author.company }}<br />
+    <span class="text-black-50 font-weight-lighter font-italic">{{ author.content }}</span><p>
+    {% if author.facebook %}
+      <a href="https://www.facebook.com/{{author.facebook}}/" target="_blank"><i class="fab fa-facebook fa-2x text-black-50"></i></a>
+    {% endif %}
   </div>
 </div>
