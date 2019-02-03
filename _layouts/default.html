@@ -7,9 +7,11 @@
       <main role="main" class="container">
       <div class="row">
       <div class="col-md-8 blog-main">
-        {% if page.image %}
-          <img src="{{ page.image }}">
-        {% endif%}
+        <div class="img">
+          {% if page.image %}
+            <img src="{{ page.image }}">
+          {% endif%}
+        </div>
         {{ content }}
       </div>
         {% include sidebar.html %}
@@ -17,6 +19,6 @@
       </main>
     </div>
   {% include footer.html %}
-  <!-- {% include lightbox.html %} -->
+  {% include lightbox.html %}
   </body>
 </html>
