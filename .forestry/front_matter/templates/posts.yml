@@ -40,12 +40,6 @@ fields:
   label: image
   name: image
   description: post image goes here
-- type: text
-  name: clicked_image
-  label: Clicked Image
-  description: used for when user clicks lightbox image
-  hidden: true
-  default: https://res.cloudinary.com/dznhn4oax/image/upload/
 - type: tag_list
   name: categories
   label: Categories
