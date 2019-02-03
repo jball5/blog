@@ -9,7 +9,7 @@
       <div class="col-md-8 blog-main">
         <div class="row justify-content-center" style="margin-bottom: 15px;">
           {% if page.image %}
-            <a href="{{ site.cloudinary_url }}{{ page.image.title }}" class="lightbox-image"><img src="{{ page.image }}"></a>
+            <a href="{{ site.cloudinary_url }}/{{ page.image.public_id }}" class="lightbox-image"><img src="{{ page.image }}"></a>
           {% endif%}
         </div>
         {{ content }}
