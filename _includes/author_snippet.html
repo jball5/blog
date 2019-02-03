@@ -3,7 +3,7 @@
     {% if page.author == "Tim Key" %}
       {% assign author = (site.authors | last) %}
       <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
-    {% else %}
+    {% elsif page.author == "Jesse Ball" %}
       {% assign author = (site.authors | first) %}
       <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
     {% endif %}
