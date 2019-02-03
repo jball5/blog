@@ -15,7 +15,7 @@ sections:
   label: Layouts
   create: documents
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
 upload_dir: ''
 public_path: https://res.cloudinary.com/dznhn4oax/image/upload
 front_matter_path: https://res.cloudinary.com/dznhn4oax/image/upload/c_fit
