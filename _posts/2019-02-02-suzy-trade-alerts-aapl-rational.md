@@ -3,7 +3,7 @@ layout: default
 title: Suzy Trade Alerts AAPL Rational
 author: Tim Key
 date: 2019-02-02 15:51:00 +0000
-image: https://res.cloudinary.com/dznhn4oax/image/upload/c_fit/v1548981987/Suzy_Trade_Alert_AAPL_Rationale.png
+image: ''
 categories:
 - rational
 - option strategy
