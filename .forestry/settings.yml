@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: jekyll-posts
   label: Posts
@@ -12,7 +12,7 @@ sections:
   create: all
 upload_dir: ''
 public_path: https://res.cloudinary.com/dznhn4oax/image/upload
-front_matter_path: https://res.cloudinary.com/dznhn4oax/image/upload/c_scale,w_600
+front_matter_path: https://res.cloudinary.com/dznhn4oax/image/upload/c_fit
 use_front_matter_path: true
 file_template: ":filename:"
 build:
