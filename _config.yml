@@ -37,6 +37,9 @@ paginate: 4
 # paginate_path: "/blog/page:num/"
 sass:
   style: compact
+algolia:
+  application_id: F4DPX38ZHV
+  index_name: prod_BLOG
 plugins:
   - jekyll-feed
   - jekyll-menus
