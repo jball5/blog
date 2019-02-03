@@ -7,9 +7,9 @@
       <main role="main" class="container">
       <div class="row">
       <div class="col-md-8 blog-main">
-        <div class="row justify-content-center" style="width: 500px; margin-bottom: 15px;">
+        <div class="row justify-content-center" style="margin-bottom: 15px;">
           {% if page.image %}
-            <a href="{{ page.image }}" class="lightbox-image"><img src="{{ page.image }}"></a>
+            <a href="{{ page.image }}" class="lightbox-image"><img src="{{ page.image }}" style="width: 600px"></a>
           {% endif%}
         </div>
         {{ content }}
