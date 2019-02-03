@@ -7,9 +7,9 @@
       <main role="main" class="container">
       <div class="row">
       <div class="col-md-8 blog-main">
-        <div class="img">
+        <div class="img" style="margin-left: auto; margin-right: auto;">
           {% if page.image %}
-            <img src="{{ page.image }}">
+            <img class="lightbox-image" src="{{ page.image }}">
           {% endif%}
         </div>
         {{ content }}
