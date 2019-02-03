@@ -8,9 +8,7 @@
       <div class="row">
       <div class="col-md-8 blog-main">
         {% if page.image %}
-          <div class="lightbox">
-            <img src="{{ page.image }}" alt="">
-          </div>
+          <img src="{{ page.image }}">
         {% endif%}
         {{ content }}
       </div>
