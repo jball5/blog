@@ -9,7 +9,7 @@
       <div class="col-md-8 blog-main">
         <div class="row justify-content-center" style="margin-bottom: 15px;">
           {% if page.image %}
-            <a href="{{ ../.forestry/settings/public_path }}/{{ .Params.image }}" class="lightbox-image"><img src="{{ page.image }}"></a>
+            <a href="{{ .Site.cloudinary_url }}/{{ .Params.image }}" class="lightbox-image"><img src="{{ page.image }}"></a>
           {% endif%}
         </div>
         {{ content }}
