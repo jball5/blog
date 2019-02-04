@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 This page contains the authors bios.
-
 {% for author in site.authors %}
-  <h2>
-    <a href="{{ author.url }}">
-      {{ author.name }} - {{ author.title }}
-    </a>
-  </h2>
-  <p>{{ author.content | markdownify }}</p>
+  <div class="row justify-content-left">
+    <div class="col-3">
+      <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
+    </div>
+    <div class="col-9">
+      <a href="{{ author.url }}"><h4 class="text-dark">{{ author.name }}</h4></a>
+      {{ author.title }}<br />
+      {{ author.company }}<br />
+      <span class="text-black-50 font-weight-lighter font-italic"><p>{{ author.content | markdownify }}</p></span>
+    </div>
+  </div>
 {% endfor %}
