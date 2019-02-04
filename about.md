@@ -10,7 +10,7 @@ This page contains the authors bios.
       <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
     </div>
     <div class="col-9">
-      <a href="{{ author.url }}"><h4 class="text-dark">{{ author.name }}</h4></a>
+      <h4 class="text-dark">{{ author.name }}</h4>
       {{ author.title }}<br />
       {{ author.company }}<br />
       <span class="text-black-50 font-weight-lighter font-italic"><p>{{ author.content | markdownify }}</p></span>
