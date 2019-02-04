@@ -40,6 +40,7 @@ sass:
 algolia:
   application_id: F4DPX38ZHV
   index_name: prod_BLOG
+  search_only_api_key: aa944f46d121fb6aed356ce69cfbce28 
 plugins:
   - jekyll-feed
   - jekyll-menus

@@ -16,12 +16,20 @@ search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Search',
+    searchAsYouType: true,
     poweredBy: true // This is required if you're on the free Community plan
   })
 );
 search.addWidget(
   instantsearch.widgets.hits({
-    container: '#search-hits'
+    container: '#search-hits',
+    templates: {
+      empty: 'No results',
+      item: `
+      <h2>{{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}</h2>
+      <p>{{ description }}</p>
+    `,
+    }
   })
 );
 
