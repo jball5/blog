@@ -3,9 +3,8 @@ layout: default
 title: About
 permalink: /about/
 ---
-This page contains the authors bios.
 {% for author in site.authors %}
-  <div class="row justify-content-left">
+  <div class="row justify-content-left" style="margin-top: 15%; margin-bottom: 10%;">
     <div class="col-3">
       <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
     </div>
@@ -14,6 +13,12 @@ This page contains the authors bios.
       {{ author.title }}<br />
       {{ author.company }}<br />
       <span class="text-black-50 font-weight-lighter font-italic"><p>{{ author.content | markdownify }}</p></span>
+      {% if author.facebook %}
+        <a href="https://www.facebook.com/{{author.facebook}}/" rel="noopener"><i class="fab fa-facebook fa-2x text-black-50"></i></a>
+      {% endif %}
+      {% if author.twitter %}
+        <a href="https://www.twitter.com/{{author.twitter}}/" rel="noopener"><i class="fab fa-twitter fa-2x text-black-50"></i></a>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
