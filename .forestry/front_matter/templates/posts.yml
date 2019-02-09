@@ -37,6 +37,10 @@ fields:
     required: true
     time_format: h:mm
   hidden: false
+- type: text
+  name: youtubeurl
+  label: YouTubeUrl
+  description: https://www.youtube.com/watch?v=5idMMnTcuxQ
 - type: file
   label: image
   name: image
