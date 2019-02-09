@@ -53,6 +53,8 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     json (2.1.0)
     kramdown (1.17.0)
     liquid (4.0.1)
@@ -90,6 +92,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-menus
   jekyll-paginate
+  jekyll-youtube
   tzinfo-data
 
 BUNDLED WITH
