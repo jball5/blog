@@ -12,7 +12,7 @@
       <div class="col-md-8 blog-main">
         <div class="row justify-content-between">
           <h2 class="font-italic">{{ page.title }}</h2>
-          <small>{{ page.date | date: "%-m/%-d/%Y" }}</small>
+          <small>{{ page.date | date_to_string: "ordinal", "US" }}</small>
         </div>
         <div class="row justify-content-center" style="margin-bottom: 20px;">
           {% if page.image %}

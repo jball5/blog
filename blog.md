@@ -11,7 +11,7 @@ permalink: /blog/
           <small class="text-success font-weight-bold">{{ post.categories | first }}</small>
           <div class="d-flex justify-content-between">
             <h3 class="mb-1 font-italic">{{ post.title }}</h3>
-            <small>{{ post.date | date: "%-m/%-d/%Y" }}</small>
+            <small>{{ post.date | date_to_string: "ordinal", "US" }}</small>
           </div>
             &nbsp;{% if post.image %}<img src="{{ post.image }}" class="img-fluid rounded shadow">&nbsp;{% endif %}
             <p class="text-muted">{{ post.excerpt | strip_html | strip_newlines | truncate: 175 }}</p>
