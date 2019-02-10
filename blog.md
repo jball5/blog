@@ -13,8 +13,8 @@ permalink: /blog/
             <h3 class="mb-1 font-italic">{{ post.title }}</h3>
             <small>{{ post.date | date_to_string: "ordinal", "US" }}</small>
           </div>
-            {% if post.youtubeurl %}&nbsp;{% youtube post.youtubeurl %}&nbsp;{% endif %}
-            {% if post.image %}&nbsp;<img src="{{ post.image }}" class="img-fluid rounded shadow">&nbsp;{% endif %}
+            {% if post.youtubeurl contains 'youtube' %}&nbsp;{% youtube post.youtubeurl %}&nbsp;{% endif %}
+            {% if post.image contains 'cloudinary' %}&nbsp;<img src="{{ post.image }}" class="img-fluid rounded shadow">&nbsp;{% endif %}
             <p class="text-muted">{{ post.excerpt | strip_html | strip_newlines | truncate: 175 }}</p>
         </a>
         <span>&nbsp;</span>
