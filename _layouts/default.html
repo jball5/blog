@@ -10,10 +10,11 @@
       <main role="main" class="container">
       <div class="row">
       <div class="col-md-8 blog-main">
-        <div class="row justify-content-between">
+        <div class="d-flex justify-content-between">
           <h2 class="font-italic">{{ page.title }}</h2>
-          <small>{{ page.date | date_to_string: "ordinal", "US" }}</small>
+          <h6 class="font-weight-bold">{{ page.date | date_to_string: "ordinal", "US" }}</h6>
         </div>
+        {% include mini_author_snippet.html %}
         <div class="row justify-content-center" style="margin-bottom: 20px;">
           {% if page.image contains 'cloudinary' %}
             <a href="{{ page.image }}" class="lightbox-image"><img src="{{ page.image }}" class="img-fluid rounded shadow"></a>
@@ -22,12 +23,10 @@
           {% endif%}
         </div>
         <div class="d-flex align-content-start flex-wrap">
-          <div class="flex-row pb-2">
-            <span class="text-info">{{ page.categories | sort_natural | join: ", " }}</span>
-          </div>
           <div class="d-flex row">
             {{ content }}
           </div>
+          <h6 class="text-info font-italic mt-2">{{ page.categories | sort_natural | join: ", " }}</h6>
         </div>
         {% include author_snippet.html %}
       </div>
