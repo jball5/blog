@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 {% for author in site.authors %}
-  <div class="row justify-content-left" style="margin-top: 15%; margin-bottom: 10%;">
+  <div class="row col-12 justify-content-left" style="margin-top: 15%; margin-bottom: 10%;">
     <div class="col-3">
       <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
     </div>
