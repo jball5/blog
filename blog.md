@@ -12,7 +12,10 @@ permalink: /blog/
           <div>
             <div class="d-flex justify-content-between">
               <h3 class="mb-1 font-italic">{{ post.title }}</h3>
-              <h6 class="font-weight-bold">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
+              <h6 class="font-weight-bold d-none d-md-block">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
+            </div>
+            <div class="d-flex justify-content-center">
+              <h6 class="font-weight-bold d-block d-sm-block d-md-none mt-2">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
             </div>
             {% include mini_author_snippet.html %}
           </div>

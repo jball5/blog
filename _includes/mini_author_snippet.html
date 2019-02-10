@@ -2,12 +2,23 @@
   <div class="d-flex justify-content-end">
     {% if post.author == "Tim Key" %}
       {% assign author = (site.authors | last) %}
-      <h6 class="pr-2 mt-2">{{ author.name }}</h6>
-      <img src="{{ author.image }}" class="img-fluid rounded" style="width: 38px; height: 38px;">
+      <h6 class="pr-2 mt-2 d-none d-md-block">{{ author.name }}</h6>
+      <img src="{{ author.image }}" class="img-fluid rounded d-none d-md-block" style="width: 38px; height: 38px;">
     {% elsif post.author == "Jesse Ball" %}
       {% assign author = (site.authors | first) %}
-      <h6 class="pr-2 mt-2">{{ author.name }}</h6>
-      <img src="{{ author.image }}" class="img-fluid rounded" style="width: 38px; height: 38px;">
+      <h6 class="pr-2 mt-2 d-none d-md-block">{{ author.name }}</h6>
+      <img src="{{ author.image }}" class="img-fluid rounded d-none d-md-block" style="width: 38px; height: 38px;">
+    {% endif %}
+  </div>
+  <div class="d-flex justify-content-center">
+    {% if post.author == "Tim Key" %}
+      {% assign author = (site.authors | last) %}
+      <h6 class="pr-2 mt-2 d-block d-sm-block d-md-none">{{ author.name }}</h6>
+      <img src="{{ author.image }}" class="img-fluid rounded d-block d-sm-block d-md-none" style="width: 38px; height: 38px;">
+    {% elsif post.author == "Jesse Ball" %}
+      {% assign author = (site.authors | first) %}
+      <h6 class="pr-2 mt-2 d-block d-sm-block d-md-none">{{ author.name }}</h6>
+      <img src="{{ author.image }}" class="img-fluid rounded d-block d-sm-block d-md-none" style="width: 38px; height: 38px;">
     {% endif %}
   </div>
 {% else %}
