@@ -29,7 +29,7 @@
           <div class="d-flex row">
             {{ content }}
           </div>
-          <h6 class="text-info font-italic mt-2">{{ page.categories | sort_natural | join: ", " }}</h6>
+          <h6 class="text-info font-italic mt-2">{{ page.categories | sort_natural | join: ", " | downcase }}</h6>
         </div>
         {% include author_snippet.html %}
       </div>
