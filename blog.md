@@ -8,14 +8,14 @@ permalink: /blog/
     <div class="list-group">
       {% for post in site.posts %}
         <a href="{{ post.url }}" class="list-group-item list-group-item-action">
-          <small class="text-success font-weight-bold">{{ post.categories | first | downcase }}</small>
+          <strong class="text-success">{{ post.categories | first | downcase }}</strong>
           <div>
             <div class="d-flex justify-content-between">
               <h3 class="mb-1 font-italic">{{ post.title }}</h3>
-              <h6 class="font-weight-bold d-none d-md-block">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
+              <p class="text-muted d-none d-md-block">{{ post.date | date_to_string: "ordinal", "US" }}</p>
             </div>
             <div class="d-flex justify-content-center">
-              <h6 class="font-weight-bold d-block d-sm-block d-md-none mt-2">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
+              <p class="text-muted d-block d-sm-block d-md-none mt-2">{{ post.date | date_to_string: "ordinal", "US" }}</p>
             </div>
             {% include mini_author_snippet.html %}
           </div>
