@@ -31,10 +31,16 @@ collections:
 
 # Build settings
 markdown: kramdown
-#theme: minima
-excerpt_separator: <!--more-->
-paginate: 4
-# paginate_path: "/blog/page:num/"
+
+# Pagination settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 sass:
   style: compact
 algolia:
@@ -42,17 +48,15 @@ algolia:
   index_name: prod_BLOG
   search_only_api_key: aa944f46d121fb6aed356ce69cfbce28
 plugins:
-  - jekyll-feed
   - jekyll-menus
-  - jekyll-paginate
   - jekyll-youtube
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

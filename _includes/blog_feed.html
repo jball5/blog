@@ -1,10 +1,10 @@
 <main role="main" class="container">
-<div class="row">
+<div id="latest" class="row">
 <div class="col-md-8 blog-main">
 <h3 class="pb-3 mb-4 font-italic border-bottom">
   Latest posts
 </h3>
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <div class=card flex-md-row" style="border: 0px;">
     <div class="row no-gutters pb-3 pt-2">
       {% if post.image %}
@@ -27,9 +27,9 @@
 <nav class="blog-pagination mt-5">
   <!-- Pagination links -->
   {% if paginator.previous_page %}
-    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}">Older</a>
+    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}#latest">Newer</a>
   {% else %}
-    <span class="btn btn-outline-primary">Older</span>
+    <span class="btn btn-outline-primary">Newer</span>
   {% endif %}
   {% if paginator.total_pages > 1 %}
     <span class="page_number ">
@@ -37,9 +37,9 @@
     </span>
   {% endif %}
   {% if paginator.next_page %}
-    <a class="btn btn-outline-secondary" href="{{ paginator.next_page_path }}">Newer</a>
+    <a class="btn btn-outline-secondary" href="{{ paginator.next_page_path }}#latest">Older</a>
   {% else %}
-    <span class="btn btn-outline-secondary disabled">Newer</span>
+    <span class="btn btn-outline-secondary disabled">Older</span>
   {% endif %}
 </nav>
 

@@ -6,7 +6,7 @@ GEM
     algolia_html_extractor (2.6.1)
       json (~> 2.0)
       nokogiri (~> 1.8.2)
-    algoliasearch (1.25.2)
+    algoliasearch (1.26.0)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
     colorator (1.1.0)
@@ -44,11 +44,10 @@ GEM
       nokogiri (~> 1.6)
       progressbar (~> 1.9)
       verbal_expressions (~> 0.1.5)
-    jekyll-feed (0.11.0)
-      jekyll (~> 3.3)
     jekyll-menus (0.6.0)
       jekyll (~> 3.1)
-    jekyll-paginate (1.1.0)
+    jekyll-paginate-v2 (2.1.0)
+      jekyll (~> 3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (2.1.2)
@@ -89,9 +88,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-algolia
-  jekyll-feed (~> 0.6)
   jekyll-menus
-  jekyll-paginate
+  jekyll-paginate-v2
   jekyll-youtube
   tzinfo-data
 
