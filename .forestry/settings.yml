@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ''
+admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: jekyll-posts
@@ -21,7 +21,7 @@ sections:
   label: Includes
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
 upload_dir: ''
 public_path: https://res.cloudinary.com/dznhn4oax/image/upload
 front_matter_path: https://res.cloudinary.com/dznhn4oax/image/upload/c_fit
