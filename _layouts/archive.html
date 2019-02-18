@@ -8,21 +8,31 @@
       <div class="row">
       <div class="col-md-8 blog-main">
         <div class="d-flex justify-content-between">
-          <h1>Archive of posts from {{ page.date | date: "%B %Y" }}</h1>
+          <h3 class="pb-3 font-italic border-bottom">Posts from {{ page.date | date: "%B %Y" }}</h3>
+        </div>
           {% assign posts = site.posts %}
           {% assign month = page.date | date: "%m" %}
-          <ul class="posts">
           {% for post in posts %}
           {% assign postmonth = post.date | date: "%m" %}
-          {% if month == postmonth %}
-            <li>
-              <span class="post-date">Published: {{ post.date | date: "%b %d, %Y" }}</span>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-          {% endif %}
+            {% if month == postmonth %}
+              <div class=card flex-md-row" style="border: 0px;">
+                <div class="row no-gutters pb-3 pt-2">
+                  {% if post.image %}
+                    <div class="col-md-3 d-none d-lg-block">
+                      <a href="{{ post.url }}"><img src="{{ post.image | replace: "c_fit", "c_fit,g_center,h_110,w_110" }}" class="card-img pt-4" alt=""></a>
+                    </div>
+                  {% endif %}
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <a href="{{ post.url }}" class="text-dark"><h3 class="card-title">{{ post.title }}</h3></a>
+                      <a href="{{ post.url }}" class="text-muted"><p class="card-text text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</p></a>
+                      <a href="{{ post.url }}" class="text-dark"><p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}</p></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
           {% endfor %}
-          </ul>
-        </div>
         {{ content }}
       </div>
         {% include sidebar.html %}
