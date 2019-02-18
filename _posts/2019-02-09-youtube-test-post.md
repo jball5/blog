@@ -4,7 +4,7 @@ author: Tim Key
 title: Youtube Test Post
 date: 2019-02-09 06:44:00 -0800
 youtubeurl: https://www.youtube.com/watch?v=jwBMb4MkjMk
-image: ''
+image: 
 categories:
 - case study
 tags:
