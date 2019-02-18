@@ -31,6 +31,8 @@ collections:
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compact
 
 # Archive settings
 jekyll-archives:
@@ -51,12 +53,14 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-sass:
-  style: compact
+
+# Search settings
 algolia:
   application_id: F4DPX38ZHV
   index_name: prod_BLOG
   search_only_api_key: aa944f46d121fb6aed356ce69cfbce28
+
+# Plugin settings
 plugins:
   - jekyll-archives
   - jekyll-menus
