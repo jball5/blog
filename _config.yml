@@ -36,7 +36,10 @@ sass:
 
 # Archive settings
 jekyll-archives:
-  enabled: []
+  enabled:
+    - year
+    - month
+    - categories
   layout: archive
   permalinks:
     year: '/:year/'
