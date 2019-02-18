@@ -32,6 +32,16 @@ collections:
 # Build settings
 markdown: kramdown
 
+# Archive settings
+jekyll-archives:
+  enabled: []
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    category: '/category/:name/'
+
 # Pagination settings
 pagination:
   enabled: true
@@ -48,6 +58,7 @@ algolia:
   index_name: prod_BLOG
   search_only_api_key: aa944f46d121fb6aed356ce69cfbce28
 plugins:
+  - jekyll-archives
   - jekyll-menus
   - jekyll-youtube
 
