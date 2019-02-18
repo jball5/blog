@@ -6,7 +6,7 @@ permalink: /blog/
 <div class="container">
   <div class="row">
     <div class="list-group">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:10 %}
         <a href="{{ post.url }}" class="list-group-item list-group-item-action">
           <strong class="text-success">{{ post.categories | first | downcase }}</strong>
           <div>
