@@ -4,16 +4,14 @@ author: Tim Key
 title: Youtube Test Post
 date: 2019-02-09 06:44:00 -0800
 youtubeurl: https://www.youtube.com/watch?v=jwBMb4MkjMk
-image: 
+image:
 categories:
 - case study
 tags:
 - left-featured
 
 ---
-Hey legacy traders it's Tim with Option Legacy helping you build a legacy
-
-through trading. Guys I've got a big smile on my face because we're breaking down for you today our case study in our Apple trade that produced a 95.7% return on investment in just three days just three days. So let's go look at it. First off, let me show you the proof of in the pudding proof in the pudding here it is this is Apple we entered into this trade back here on January 31st and we exited out today. Today is February 1st so this was I believe Friday and so 3 days here we entered in a one contract February fifteenth expiration and it was a 167.50 call we bought to open it costs us $3.50 and then today we exit out this morning we sold this thing for $6.65. We made uh six eighty five minus
+Hey legacy traders it's Tim with Option Legacy helping you build a legacy through trading. Guys I've got a big smile on my face because we're breaking down for you today our case study in our Apple trade that produced a 95.7% return on investment in just three days just three days. So let's go look at it. First off, let me show you the proof of in the pudding proof in the pudding here it is this is Apple we entered into this trade back here on January 31st and we exited out today. Today is February 1st so this was I believe Friday and so 3 days here we entered in a one contract February fifteenth expiration and it was a 167.50 call we bought to open it costs us $3.50 and then today we exit out this morning we sold this thing for $6.65. We made uh six eighty five minus
 
 three fifty three hundred thirty five
 
