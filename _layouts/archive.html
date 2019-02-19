@@ -18,11 +18,11 @@
               <div class="card flex-md-row" style="border: 0px;">
                 <div class="row no-gutters pb-3 pt-2">
                   {% if post.image %}
-                    <div class="col-md-3 d-none d-lg-block">
+                    <div class="col-md-2 d-none d-lg-block">
                       <a href="{{ post.url }}"><img src="{{ post.image | replace: "c_fit", "c_fit,g_center,h_110,w_110" }}" class="card-img pt-4" alt=""></a>
                     </div>
                   {% endif %}
-                  <div class="col-md-9">
+                  <div class="col-md-10">
                     <div class="card-body">
                       <a href="{{ post.url }}" class="text-dark"><h3 class="card-title">{{ post.title }}</h3></a>
                       <a href="{{ post.url }}" class="text-muted"><p class="card-text text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</p></a>
