@@ -1,0 +1,25 @@
+{% assign posts = site.posts %}
+{% assign groupbyyear = posts | group_by_exp:"post","post.date | date:'%Y' " %}
+{% for yearitem in groupbyyear %}
+{% assign groupbymonth = yearitem.items | group_by_exp:"post","post.date | date:'%B' " %}
+  {% for month in groupbymonth %}
+    <a href="/{{yearitem.name}}/{{month.name | date:'%m'}}">{{ month.name }} {{ yearitem.name }}</a>
+  {% endfor %}
+{% endfor %}
+
+<!-- <a href="{{ site.url }}/{{ yearitem.name }}/{{ monthitem.name }}/"></a> -->
+
+<!-- {% assign month = page.date | date: "%m" %}
+{% for post in posts %}
+{% assign postmonth = post.date | date: "%m" %}
+  {% if month == postmonth %}
+  {% endif %}
+{% endfor %} -->
+
+<!-- {% assign groupbymonth = yearitem.items | group_by_exp:"post","post.date | date:'%m' " %}
+{% for monthitem in groupbymonth %}
+  {% assign month = monthitem.name | split:" " %}
+    {% for item in monthitem.items %}
+      <a href="#">{{ item.date | date:'%B %Y' }}</a>
+    {% endfor %}
+{% endfor %} -->
