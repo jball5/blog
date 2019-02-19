@@ -75,6 +75,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - test.md
+  - includes/archive_sidebar.html
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
