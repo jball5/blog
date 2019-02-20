@@ -11,7 +11,7 @@ sections:
   match: "**/*"
 - type: jekyll-posts
   label: Posts
-  create: all
+  create: documents
 upload_dir: ''
 public_path: https://res.cloudinary.com/dznhn4oax/image/upload
 front_matter_path: https://res.cloudinary.com/dznhn4oax/image/upload/c_fit
