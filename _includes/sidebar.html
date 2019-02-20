@@ -5,9 +5,23 @@
     <!-- <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
   </div>
 
-  <div class="p-3">
+  <div class="p-3 d-none d-md-block">
     <h4 class="font-italic">Archives</h4>
     <ol class="list-unstyled mb-0">
+      {% assign posts = site.posts %}
+      {% assign groupbyyear = posts | group_by_exp:"post","post.date | date:'%Y' " %}
+      {% for yearitem in groupbyyear %}
+      {% assign groupbymonth = yearitem.items | group_by_exp:"post","post.date | date:'%B' " %}
+        {% for month in groupbymonth %}
+        <li><a href="/{{yearitem.name}}/{{month.name | date:'%m'}}">{{ month.name }} {{ yearitem.name }}</a></li>
+        {% endfor %}
+      {% endfor %}
+    </ol>
+  </div>
+  <!-- Small screen only -->
+  <div class="p-3 d-block d-md-none">
+    <h4 class="font-italic text-center">Archives</h4>
+    <ol class="list-unstyled text-center mb-0">
       {% assign posts = site.posts %}
       {% assign groupbyyear = posts | group_by_exp:"post","post.date | date:'%Y' " %}
       {% for yearitem in groupbyyear %}
