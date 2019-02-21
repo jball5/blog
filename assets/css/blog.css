@@ -1,4 +1,14 @@
 /* stylelint-disable selector-list-comma-newline-after */
+/*
+ * OptionLegacy Colors
+ */
+ .text-ol-cyan {
+   color: #00c400;
+ }
+
+ .text-ol-purple {
+   color: #782f88;
+ }
 
 .blog-header {
   line-height: 1;
