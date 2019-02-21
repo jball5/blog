@@ -24,9 +24,9 @@
                   {% endif %}
                   <div class="col-md-10">
                     <div class="card-body">
-                      <a href="{{ post.url }}" class="text-dark"><h3 class="card-title">{{ post.title }}</h3></a>
-                      <a href="{{ post.url }}" class="text-muted"><p class="card-text text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</p></a>
-                      <a href="{{ post.url }}" class="text-dark"><p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}</p></a>
+                      <a href="{{ post.url }}" class="text-dark text-decoration-none"><h3 class="card-title">{{ post.title }}</h3></a>
+                      <a href="{{ post.url }}" class="text-muted text-decoration-none"><p class="card-text text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</p></a>
+                      <a href="{{ post.url }}" class="text-dark text-decoration-none"><p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}</p></a>
                     </div>
                   </div>
                 </div>

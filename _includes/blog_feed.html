@@ -14,33 +14,34 @@
       {% endif %}
       <div class="col-md-10">
         <div class="card-body">
-          <a href="{{ post.url }}" class="text-dark"><h3 class="card-title">{{ post.title }}</h3></a>
-          <a href="{{ post.url }}" class="text-muted"><p class="card-text text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</p></a>
-          <a href="{{ post.url }}" class="text-dark"><p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}</p></a>
+          <a href="{{ post.url }}" class="text-dark text-decoration-none"><h3 class="card-title">{{ post.title }}</h3></a>
+          <a href="{{ post.url }}" class="text-muted text-decoration-none"><p class="card-text text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</p></a>
+          <a href="{{ post.url }}" class="text-dark text-decoration-none"><p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}</p></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="border-bottom"></div><!-- /.blog-post -->
+  <div class="mb-3 border-bottom"></div><!-- /.blog-post -->
 {% endfor %}
 
-<nav class="blog-pagination mt-5 d-flex justify-content-center justify-content-md-start">
-  <!-- Pagination links -->
-  {% if paginator.previous_page %}
-    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}#latest">Newer</a>
-  {% else %}
-    <span class="btn btn-outline-primary">Newer</span>
-  {% endif %}
-  {% if paginator.total_pages > 1 %}
-    <span class="page_number ">
-      Page: {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a class="btn btn-outline-secondary" href="{{ paginator.next_page_path }}#latest">Older</a>
-  {% else %}
-    <span class="btn btn-outline-secondary disabled">Older</span>
-  {% endif %}
-</nav>
-
+{% if paginator.total_pages > 1 %}
+  <nav class="blog-pagination mt-5 d-flex justify-content-center justify-content-md-start">
+    <!-- Pagination links -->
+    {% if paginator.previous_page %}
+      <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}#latest">Newer</a>
+    {% else %}
+      <span class="btn btn-outline-primary">Newer</span>
+    {% endif %}
+    {% if paginator.total_pages > 1 %}
+      <span class="page_number ">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+      </span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a class="btn btn-outline-secondary" href="{{ paginator.next_page_path }}#latest">Older</a>
+    {% else %}
+      <span class="btn btn-outline-secondary disabled">Older</span>
+    {% endif %}
+  </nav>
+{% endif %}
 </div>
