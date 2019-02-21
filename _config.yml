@@ -62,6 +62,13 @@ algolia:
   application_id: F4DPX38ZHV
   index_name: prod_BLOG
   search_only_api_key: aa944f46d121fb6aed356ce69cfbce28
+  settings:
+    searchableAttributes:
+      - title
+      - unordered(content)
+      - collection,categories,tags
+    attributesToSnippet:
+      - content:45
 
 # Plugin settings
 plugins:

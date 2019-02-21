@@ -27,14 +27,15 @@ const hitTemplate = function(hit) {
     }).join(' > ')
   }
 
-  const content = hit._highlightResult.html.value;
+  // const content = hit._highlightResult.html.value;
+  const content = hit._snippetResult.content.value;
 
   return `
     <div class="post-item">
-      <h3><a class="post-link text-dark" href="${url}">${title}</a></h3>
-      <span class="post-meta">${date}</span>
+      <h4><a class="post-link text-dark text-decoration-none" href="${url}">${title}</a></h4>
+      <span class="post-meta text-muted">${date}</span>
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
-      <div class="post-snippet">${content}</div>
+      <div class="post-snippet text-dark">${content}</div>
     </div>
   `;
 }
