@@ -8,7 +8,7 @@ permalink: /blog/
     <div class="list-group">
       {% for post in site.posts limit:10 %}
         <a href="{{ post.url }}" class="list-group-item list-group-item-action">
-          <strong class="text-success">{{ post.categories | first | downcase }}</strong>
+          <strong class="text-ol-teal">{{ post.categories | first | downcase }}</strong>
           <div>
             <div class="d-flex justify-content-between">
               <h3 class="mb-1 font-italic">{{ post.title }}</h3>

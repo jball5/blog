@@ -1,13 +1,14 @@
 /* stylelint-disable selector-list-comma-newline-after */
+
 /*
  * OptionLegacy Colors
  */
- .text-ol-cyan {
-   color: #00c400;
+ .text-ol-teal {
+   color: #00c8d0 !important;
  }
 
  .text-ol-purple {
-   color: #782f88;
+   color: #830f8c !important;
  }
 
 .blog-header {
