@@ -1,13 +1,14 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
-author: "Jesse Ball"
-date:   2019-01-27 10:10:26 -0800
+title: Right Featured Demo
+author: Jesse Ball
+date: 2019-01-27 18:10:26 +0000
 image: https://res.cloudinary.com/dznhn4oax/image/upload/c_fit/v1548981987/Suzy_Trade_Alert_AAPL_Rationale.png
 categories:
 - jekyll update
 tags:
 - right-featured
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
