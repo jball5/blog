@@ -21,6 +21,10 @@
                     <div class="col-md-2 d-none d-lg-block">
                       <a href="{{ post.url }}"><img src="{{ post.image | replace: "c_fit", "c_fit,g_center,h_110,w_110" }}" class="card-img pt-4" alt=""></a>
                     </div>
+                  {% else %}
+                    <div class="col-md-2 d-none d-lg-block">
+                      <a href="{{ post.url }}"><img src="https://res.cloudinary.com/dznhn4oax/image/upload/c_fit,g_center,h_110,w_110/v1550539760/ol_steps.png" alt="" class="card-img pt-4"></a>
+                    </div>
                   {% endif %}
                   <div class="col-md-10">
                     <div class="card-body">
