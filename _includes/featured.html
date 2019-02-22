@@ -16,7 +16,7 @@
         {% if post.image != empty string %}
           <img src="{{ post.image | replace: "c_fit", "c_fill,g_center,h_250,w_200" }}" height="250" alt="" class="card-img-right flex-auto d-none d-xl-block">
         {% else %}
-          {% include icons/placeholder.svg width="200" height="250" background="#55595c" color="#eceeef" class="card-img-right flex-auto d-none d-lg-block" text="" %}
+          <img src="https://res.cloudinary.com/dznhn4oax/image/upload/c_fill,g_center,h_250,w_200/v1550539760/ol_steps.png" height="250" alt="" class="card-img-right img-thumbnail flex-auto d-none d-lg-block">
         {% endif %}
       </div>
     </div>
@@ -37,9 +37,9 @@
           <a href="{{ post.url }}">Continue reading</a>
         </div>
         {% if post.image != empty string %}
-          <img src="{{ post.image | replace: "c_fit", "c_fill,g_center,h_250,w_200" }}" alt="" height="250" class="card-img-right img-fluid flex-auto d-none d-xl-block">
+          <img src="{{ post.image | replace: "c_fit", "c_fill,g_center,h_250,w_200" }}" alt="" height="250" class="card-img-right img-thumbnail img-fluid flex-auto d-none d-xl-block">
         {% else %}
-          {% include icons/placeholder.svg width="200" height="250" background="#55595c" color="#eceeef" class="card-img-right flex-auto d-none d-lg-block" text="Thumbnail" %}
+          <img src="https://res.cloudinary.com/dznhn4oax/image/upload/c_fill,g_center,h_250,w_200/v1550539760/ol_steps.png" height="250" alt="" class="card-img-right img-thumbnail flex-auto d-none d-lg-block">
         {% endif %}
       </div>
     </div>
