@@ -14,10 +14,10 @@ permalink: /about/
       {{ author.company }}<br />
       <span class="text-black-50 font-weight-lighter font-italic"><p>{{ author.content | markdownify }}</p></span>
       {% if author.facebook %}
-        <a href="https://www.facebook.com/{{author.facebook}}/" rel="noopener"><i class="fab fa-facebook fa-2x text-black-50"></i></a>
+        <a href="https://www.facebook.com/{{author.facebook}}/" rel="noopener"><i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i></a>
       {% endif %}
       {% if author.twitter %}
-        <a href="https://www.twitter.com/{{author.twitter}}/" rel="noopener"><i class="fab fa-twitter fa-2x text-black-50"></i></a>
+        <a href="https://www.twitter.com/{{author.twitter}}/" rel="noopener"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
       {% endif %}
     </div>
   </div>
