@@ -12,12 +12,12 @@
     <h4 class"text-dark">{{ author.name }}</h4>
     {{ author.title }}<br />
     {{ author.company }}<br />
-    <span class="text-black-50 font-weight-lighter font-italic">{{ author.content }}</span><p>
+    <span class="text-black-50 font-weight-lighter font-italic">{{ author.description }}</span><p>
     {% if author.facebook %}
-      <a href="https://www.facebook.com/{{author.facebook}}/" target="_blank"><i class="fab fa-facebook fa-2x text-black-50"></i></a>
+      <a href="https://www.facebook.com/{{author.facebook}}/" target="_blank"><i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i></a>
     {% endif %}
     {% if author.twitter %}
-      <a href="https://www.twitter.com/{{author.twitter}}/" target="_blank"><i class="fab fa-twitter fa-2x text-black-50"></i></a>
+      <a href="https://www.twitter.com/{{author.twitter}}/" target="_blank"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
     {% endif %}
   </div>
 </div>
