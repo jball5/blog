@@ -3,22 +3,4 @@ layout: default
 title: About
 permalink: /about/
 ---
-{% for author in site.authors %}
-  <div class="row col-12 justify-content-left" style="margin-top: 15%; margin-bottom: 10%;">
-    <div class="col-3">
-      <img src="{{ author.image }}" class="img-fluid rounded" style="width: 150px; height: auto;">
-    </div>
-    <div class="col-9">
-      <h4 class="text-dark">{{ author.name }}</h4>
-      {{ author.title }}<br />
-      {{ author.company }}<br />
-      <span class="text-black-50 font-weight-lighter font-italic"><p>{{ author.content | markdownify }}</p></span>
-      {% if author.facebook %}
-        <a href="https://www.facebook.com/{{author.facebook}}/" rel="noopener"><i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i></a>
-      {% endif %}
-      {% if author.twitter %}
-        <a href="https://www.twitter.com/{{author.twitter}}/" rel="noopener"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
-      {% endif %}
-    </div>
-  </div>
-{% endfor %}
+{% include about.html %}
