@@ -75,6 +75,7 @@ plugins:
   - jekyll-archives
   - jekyll-menus
   - jekyll-youtube
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

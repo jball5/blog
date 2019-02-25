@@ -46,6 +46,8 @@ GEM
       verbal_expressions (~> 0.1.5)
     jekyll-archives (2.1.1)
       jekyll (>= 2.4)
+    jekyll-include-cache (0.1.0)
+      jekyll (~> 3.3)
     jekyll-menus (0.6.0)
       jekyll (~> 3.1)
     jekyll-paginate-v2 (2.1.0)
@@ -91,6 +93,7 @@ DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-algolia
   jekyll-archives
+  jekyll-include-cache
   jekyll-menus
   jekyll-paginate-v2
   jekyll-youtube
