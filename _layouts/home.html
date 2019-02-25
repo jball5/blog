@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
+  {% include_cached head.html %}
   <body>
-    {% include navigation.html %}
+    {% include_cached navigation.html %}
     <div class="container">
       {% include hero.html %}
       {% include featured.html %}
       {% include blog_feed.html %}
-      {% include sidebar.html %}
+      {% include_cached sidebar.html %}
       {{ content }}
     </div>
-  {% include footer.html %}
-  {% include lightbox.html %}
+  {% include_cached footer.html %}
+  {% include_cached lightbox.html %}
   </body>
-  {% include modal.html %}
-  {% include algolia.html %}
+  {% include_cached modal.html %}
+  {% include_cached algolia.html %}
 </html>
