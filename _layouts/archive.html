@@ -38,7 +38,7 @@
               <div class="mb-3 border-bottom"></div>
             {% endif %}
           {% endfor %}
-        {{ content }}
+        {{ content | extlinks }}
       </div>
         {% include_cached sidebar.html %}
       </div>

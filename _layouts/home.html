@@ -8,7 +8,7 @@
       {% include featured.html %}
       {% include blog_feed.html %}
       {% include_cached sidebar.html %}
-      {{ content }}
+      {{ content | extlinks }}
     </div>
   {% include_cached footer.html %}
   {% include_cached lightbox.html %}

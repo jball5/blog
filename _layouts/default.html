@@ -28,7 +28,7 @@
         <div class="d-flex align-content-start flex-wrap">
           <div class="d-flex row">
             {% include category_snippet.html %}
-            {{ content }}
+            {{ content | extlinks }}
           </div>
         </div>
         {% include author_snippet.html %}
