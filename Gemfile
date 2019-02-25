@@ -26,6 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem "jekyll-youtube"
   gem "jekyll-include-cache"
+  gem "jekyll-extlinks"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

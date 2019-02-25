@@ -70,12 +70,18 @@ algolia:
     attributesToSnippet:
       - content:45
 
+# external links section
+extlinks:
+  attributes: {rel: nofollow, target: _blank}
+  rel_exclude: ['127.0.0.1', 'pcgsyyay-rhcpg.preview.forestry.io']
+
 # Plugin settings
 plugins:
   - jekyll-archives
   - jekyll-menus
   - jekyll-youtube
   - jekyll-include-cache
+  - jekyll-extlinks
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
