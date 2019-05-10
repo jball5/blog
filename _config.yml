@@ -34,6 +34,10 @@ markdown: kramdown
 sass:
   style: compact
 
+instant_preview: true
+build:
+    instant_preview_command: bundle exec jekyll serve --port 8080 --host 0.0.0.0
+
 # Archive settings
 jekyll-archives:
   enabled:
