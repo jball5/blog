@@ -1,7 +1,6 @@
 ---
 label: Posts
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: layout
@@ -54,5 +53,5 @@ fields:
   name: tags
   description: ex. main-featured, left-featured, right-featured
 pages:
-- _posts/2019-02-02-suzy-trade-alerts-aapl-rational.md
 - _posts/2019-02-09-youtube-test-post.md
+- _posts/2019-02-02-suzy-trade-alerts-aapl-rational.md
