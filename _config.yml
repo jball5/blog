@@ -77,6 +77,7 @@ extlinks:
 
 # Plugin settings
 plugins:
+  - jekyll-feed
   - jekyll-archives
   - jekyll-menus
   - jekyll-youtube
